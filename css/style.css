@@ -1,0 +1,299 @@
+@font-face {
+    font-family: gotham;
+    src: url(../fonts/gothamblack.ttf) format('truetype');}
+
+html,body {
+    height: 100%;
+    background: #182337;}
+
+#grid_container {
+	width: 1100px;
+	height: 600px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-top: -300px;
+	margin-left: -550px;}
+
+.row{
+    height: 80px;
+    margin: 10px 0;}
+
+.phrase{
+    width:auto;
+    height: 80px;
+    margin: 10px 0;
+    background: #182337;
+    font-family: gotham, sans-serif;
+    margin-left: 13px;
+	font-size: 4em;}
+
+.no{
+    font-family: gotham, sans-serif;
+    margin-left: 13px;
+	font-size: 4em;
+    color: #db3d6e;}
+
+@-webkit-keyframes a_appear {
+    0%{visibility: visible;}
+    7%{visibility: visible;}
+    14% {visibility: visible;}
+    21% {visibility: visible;}
+    28% {visibility: visible;}
+    /* groups a-d appear */
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    49% {visibility: visible;}
+    /* groups e-g appear */
+    56% {visibility: visible;}
+    /* groups a-d only */
+    63% {visibility: visible;}
+    70% {visibility: visible;}
+    /* groups h-i appear */
+    77% {visibility: visible;}
+    /* groups a-d only */
+    84% {visibility: visible;}
+    91% {visibility: visible;}
+    100% {visibility: visible;}
+    /* groups b-d disappear */}
+
+.a {
+    visibility: hidden;
+    -webkit-animation: a_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes b_appear {
+  0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: visible;}
+    21% {visibility: visible;}
+    28% {visibility: visible;}
+    /* groups a-d appear */
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    49% {visibility: visible;}
+    /* groups e-g appear */
+    56% {visibility: visible;}
+    /* groups a-d only */
+    63% {visibility: visible;}
+    70% {visibility: visible;}
+    /* groups h-i appear */
+    77% {visibility: visible;}
+    /* groups a-d only */
+    84% {visibility: visible;}
+    91% {visibility: visible;}
+    100% {visibility: hidden;}
+    /* groups b-d disappear */}
+
+.b {
+    visibility: hidden;
+    -webkit-animation: b_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes c_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: visible;}
+    21% {visibility: visible;}
+    /* groups a-d appear */
+    28% {visibility: visible;}
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    /* groups e-g appear */
+    49% {visibility: visible;}
+    /* groups a-d only */
+    56% {visibility: visible;}
+    63% {visibility: visible;}
+    /* groups h-i appear */
+    70% {visibility: visible;}
+    /* groups a-d only */
+    77% {visibility: visible;}
+    84% {visibility: visible;}
+    91% {visibility: hidden;}
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+.c {
+    visibility: hidden;
+    -webkit-animation: c_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes d_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: visible;}
+    /* groups a-d appear */
+    28% {visibility: visible;}
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    /* groups e-g appear */
+    49% {visibility: visible;}
+    /* groups a-d only */
+    56% {visibility: visible;}
+    63% {visibility: visible;}
+    /* groups h-i appear */
+    70% {visibility: visible;}
+    /* groups a-d only */
+    77% {visibility: visible;}
+    84% {visibility: hidden;}
+    91% {visibility: hidden;}
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+
+.d {
+    visibility: hidden;
+    -webkit-animation: d_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes e_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: hidden;}
+    /* groups a-d appear */
+    28% {visibility: visible;}
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    /* groups e-g appear */
+    43% {visibility: hidden;}
+
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+.e {
+    position: absolute;
+    top: 80px;
+    left: 111px;
+    padding: 0 25px;
+    color: #9fc6cb;
+    visibility: hidden;
+    -webkit-animation: e_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes f_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: hidden;}
+    /* groups a-d appear */
+    28% {visibility: hidden;}
+    35% {visibility: visible;}
+    42% {visibility: visible;}
+    /* groups e-g appear */
+    43% {visibility: hidden;}
+
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+.f {
+    position: absolute;
+    top: 260px;
+    left: 590px;
+    padding: 0 25px;
+    color: #9fc6cb;
+    visibility: hidden;
+    -webkit-animation: f_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes g_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: hidden;}
+    /* groups a-d appear */
+    28% {visibility: hidden;}
+    35% {visibility: hidden;}
+    42% {visibility: visible;}
+    /* groups e-g appear */
+    43% {visibility: hidden;}
+
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+.g {
+    position: absolute;
+    top: 440px;
+    left: 235px;
+    padding: 0 50px;
+    color: #fff;
+    visibility: hidden;
+    -webkit-animation: g_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes h_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: hidden;}
+    /* groups a-d appear */
+    28% {visibility: hidden;}
+    35% {visibility: hidden;}
+    42% {visibility: hidden;}
+    /* groups e-g appear */
+    49% {visibility: hidden;}
+    /* groups a-d only */
+    56% {visibility: visible;}
+    63% {visibility: visible;}
+    /* groups h-i appear */
+    70% {visibility: hidden;}
+    /* groups a-d only */
+    77% {visibility: hidden;}
+    84% {visibility: hidden;}
+    91% {visibility: hidden;}
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+
+.h {
+    position: absolute;
+    top: 170px;
+    left: 110px;
+    padding: 0 50px;
+    color: #f3d373;
+    visibility: hidden;
+    -webkit-animation: h_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
+
+@-webkit-keyframes i_appear {
+    0%{visibility: hidden;}
+    7%{visibility: hidden;}
+    14% {visibility: hidden;}
+    21% {visibility: hidden;}
+    /* groups a-d appear */
+    28% {visibility: hidden;}
+    35% {visibility: hidden;}
+    42% {visibility: hidden;}
+    /* groups e-g appear */
+    49% {visibility: hidden;}
+    /* groups a-d only */
+    56% {visibility: hidden;}
+    63% {visibility: visible;}
+    /* groups h-i appear */
+    70% {visibility: hidden;}
+    /* groups a-d only */
+    77% {visibility: hidden;}
+    84% {visibility: hidden;}
+    91% {visibility: hidden;}
+    100% {visibility: hidden;}
+    /* groups a-d disappear */}
+
+.i {
+    position: absolute;
+    top: 350px;
+    left: 230px;
+    padding: 0 25px;
+    color: #f3d373;
+    visibility: hidden;
+    -webkit-animation: i_appear 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;}
